@@ -1,0 +1,12 @@
+---
+box: ubuntu/xenial64
+
+shell: |
+  apt-get update
+  apt-get install -y python
+
+hosts:
+  - name: ubuntu
+    port: 8090
+    memory: 2048
+    cpus: 2

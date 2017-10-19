@@ -1,0 +1,9 @@
+ansible_python_interpreter: "/usr/bin/python3"
+
+docker_edition: 'ce'
+docker_package: "docker-{{ docker_edition }}"
+docker_package_state: latest
+docker_apt_release_channel: stable
+docker_apt_repository: "deb https://download.docker.com/linux/{{ ansible_distribution|lower }} {{ ansible_distribution_release }} {{ docker_apt_release_channel }}"
+docker_install_compose: true
+docker_compose_version: "1.17.0-rc1"
