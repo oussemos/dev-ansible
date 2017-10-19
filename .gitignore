@@ -1,0 +1,11 @@
+# Python
+*.pyc
+.cache/
+.venv/
+.idea/
+*.log
+
+# Ansible
+.galaxy/
+*.retry
+ansible/roles/*
